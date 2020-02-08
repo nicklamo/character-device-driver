@@ -1,0 +1,12 @@
+.tmp_versions
+.cache.mk
+.simple_char_driver.ko.cmd
+.simple_char_driver.mod.o.cmd
+.simple_char_driver.o.cmd
+Module.symvers
+modules.order
+simple_char_driver.ko
+.simple_char_driver.mod.c
+.simple_char_driver.mod.o
+simple_char_driver.o
+test
