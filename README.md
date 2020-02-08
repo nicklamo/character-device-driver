@@ -27,4 +27,4 @@ run
 	- sudo rmmod simple_character_driver  
 
 
-Must be on a linux distrobution
+Must be on a linux distribution
