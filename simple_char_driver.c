@@ -33,7 +33,7 @@ ssize_t simple_char_driver_read (struct file *pfile, char __user *buffer, size_t
 	//if we are, read the most that we can without going out of bounds
 	if (*offset + length > BUFFER_SIZE){
 		// writing out of bounds, need to resize length
-		length -= ((*offset+length) - BUFFER_SIZE);
+		length = BUFFER_SIZE - *offset;
 	} // otherwise length is fine
 
 	num_bytes_read = length;
@@ -59,7 +59,7 @@ ssize_t simple_char_driver_write (struct file *pfile, const char __user *buffer,
 	//if we are, write the most that we can without going out of bounds
 	if (*offset + length > BUFFER_SIZE){
 		// writing out of bounds, need to resize length
-		length -= ((*offset+length) - BUFFER_SIZE);
+		length =  BUFFER_SIZE - *offset;
 	} // otherwise length is fine
 
 	num_bytes_write = length;

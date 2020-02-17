@@ -3,8 +3,8 @@
 #include <string.h>
 
 #include <sys/stat.h>
-#include <fcntl.h> // for open
-#include <unistd.h> //for close
+#include <fcntl.h> // for open and close
+#include <unistd.h> 
 
 #define BUFFER_SIZE 1024
 void printMenu(void);
